@@ -8,7 +8,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const element = <h1>Hello, Platzi Badges!</h1>;
+const name = "Ejemplo2";
+// {} Para ir inyectando variables o expresiones de javascript
+// const element = <h1>Hello {name}</h1>;
+const sum = () => 3 + 3;
+const element = <h1>Hello {sum()}</h1>;
 
 const container = document.getElementById('app');
 
