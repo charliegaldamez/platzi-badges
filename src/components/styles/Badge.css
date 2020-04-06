@@ -1,0 +1,28 @@
+.Badge{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 1px rgba(156,156,156,1);
+}
+
+.Badge-header{
+    background: #000;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Badge-person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Badge-person img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.Badge-person h1 {
+    padding-left: 1em;
+}
