@@ -1,0 +1,13 @@
+.Navbar {
+    background: #000;
+    padding: 1.2em;
+}
+
+.Navbar a:hover {
+    text-decoration: none;
+}
+
+.Navbar a > span {
+    color: white;
+    padding: 0px 5px;
+}
