@@ -3,12 +3,10 @@ import React from 'react';
 import "./styles/BadgeForm.css";
 
 class BadgeForm extends React.Component {
+    // Importante inicializar nuestro state, si vamos a leerlo en otros lugares
+    // state = {
 
-    handleChange = (e) => {
-        console.log({
-            name: e.target.name,
-            value: e.target.value});
-    }
+    // };
 
     handleClick = (e) => {
         console.log("Button clicked");
@@ -21,8 +19,15 @@ class BadgeForm extends React.Component {
                 <form>
                     <div className="form-group">
                       <label>Firstname</label>
-                      <input type="text" onChange={this.handleChange} name="firstName" className="form-control" placeholder="Nombre" aria-describedby="helpId" />
-                      <small id="helpId" className="text-muted">Help text</small>
+                      <input type="text" onChange={this.props.onChange} name="firstName" className="form-control" placeholder="Nombre" value = {this.props.formValues.firstName} />
+                    </div>
+                    <div className="form-group">
+                      <label>Lastname</label>
+                      <input type="text" onChange={this.props.onChange} name="lastName" className="form-control" placeholder="Apellido" value = {this.props.formValues.lastName} />
+                    </div>
+                    <div className="form-group">
+                      <label>Email</label>
+                      <input type="email" onChange={this.props.onChange} name="email" className="form-control" placeholder="Email" value = {this.props.formValues.email} />
                     </div>
                     <input onClick={this.handleClick} className="btn btn-primary" type="button" value="Save" />
                 </form>
