@@ -19,7 +19,7 @@ class Badge extends React.Component {
                     <p>Frontend</p>
                     <p>@blah</p>
                 </div>
-                <div class="Badge-hashtag">
+                <div className="Badge-hashtag">
                     #Platzi
                 </div>
             </div>
